@@ -331,6 +331,7 @@ class ProjectCarousel {
 class ContribGrid {
   constructor(containerId) {
     const container = document.getElementById(containerId);
+    if (!container) return;
     const totalCells = 26 * 7; // 26 weeks × 7 days
 
     const levels = [
