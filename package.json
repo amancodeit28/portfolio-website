@@ -1,0 +1,23 @@
+{
+  "name": "aman-sharma-portfolio",
+  "version": "1.0.0",
+  "description": "Full-stack portfolio for Aman Sharma, built with React and Express",
+  "type": "module",
+  "scripts": {
+    "install-all": "npm install && npm install --prefix frontend",
+    "server": "nodemon api/index.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix frontend"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
