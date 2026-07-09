@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aman Sharma — Full-Stack Developer & Data Analyst. Building REST APIs, ETL pipelines, and ML systems. Currently pursuing MCA at NIET." />
+  <meta name="author" content="Aman Sharma" />
+
+  <title>Aman Sharma — Full-Stack Developer & Data Analyst</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== CURSOR ===================== -->
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ===================== SCROLL PROGRESS ===================== -->
+  <div class="progress" id="progress"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav__logo">
+      <span class="nav__logo-dot"></span>
+      AS / PORTFOLIO'26
+    </a>
+
+    <div class="nav__links">
+      <a href="#about"   class="nav__link">about</a>
+      <a href="#skills"  class="nav__link">skills</a>
+      <a href="#work"    class="nav__link">work</a>
+      <a href="#stats"   class="nav__link">stats</a>
+      <a href="#contact" class="nav__link">contact</a>
+    </div>
+
+    <button
+      class="nav__cta"
+      onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+    >
+      let's talk →
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero section">
+    <canvas class="hero__canvas" id="particles"></canvas>
+    <div class="hero__grid"></div>
+
+    <div class="corner corner--tl"></div>
+    <div class="corner corner--tr"></div>
+    <div class="corner corner--bl"></div>
+    <div class="corner corner--br"></div>
+
+    <div class="hero__inner">
+      <div>
+        <div class="hero__tag">
+          <span class="hero__tag-live"></span>
+          AVAILABLE FOR SDE / DATA ROLES · 2026
+        </div>
+
+        <h1 class="hero__heading">
+          <span class="line"><span class="word">Aman</span></span>
+          <span class="line"><span class="word word--delayed">Sharma<em>.</em></span></span>
+        </h1>
+
+        <div class="hero__typed" id="typed">
+          <span class="caret"></span>
+        </div>
+
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#work">
+            view work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn" href="#" id="downloadResume">
+            download résumé
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m-5-5l5 5 5-5M5 21h14"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="monogram">
+        <div class="monogram__ring--outer"></div>
+        <div class="monogram__ring"></div>
+        <div class="monogram__core">A<span style="color:rgba(0,0,0,.5)">·</span>S</div>
+        <div class="monogram__label">DELHI · IST +05:30</div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-cue">
+      <span>SCROLL</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SEPARATOR ===================== -->
+  <div class="separator">
+    <div><span class="accent">●</span> FULL-STACK</div>
+    <div><span class="accent">●</span> DATA ANALYTICS</div>
+    <div><span class="accent">●</span> ML/AI</div>
+    <div><span class="accent">●</span> ORACLE CERTIFIED</div>
+    <div><span class="accent">●</span> 250+ LEETCODE</div>
+    <div><span class="accent">●</span> DELHI, IN</div>
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="section__label reveal">01 / About</div>
+    <h2 class="section__title reveal reveal--d1">Engineer who ships <em>and</em> analyzes.</h2>
+
+    <div class="about__grid">
+      <div class="about__bio reveal reveal--d2">
+        I build things that <em>work</em> and figure out <em>why</em> they work.
+        <span class="muted">Full-stack developer and data analyst</span> with hands-on
+        experience shipping REST APIs, ETL pipelines, and interactive dashboards.
+        Currently pursuing my <em>MCA</em> to go deeper into distributed systems and
+        ML engineering — while turning real-world datasets into decisions that matter.
+      </div>
+
+      <div class="stat-grid reveal reveal--d3">
+        <div class="stat-grid__item">
+          <div class="stat-grid__number" data-target="250">0<sup>+</sup></div>
+          <div class="stat-grid__label">LeetCode Solved</div>
+        </div>
+        <div class="stat-grid__item">
+          <div class="stat-grid__number" data-target="8.4" data-decimal="1">0.0</div>
+          <div class="stat-grid__label">MCA CGPA</div>
+        </div>
+        <div class="stat-grid__item">
+          <div class="stat-grid__number" data-target="8800">0<sup>+</sup></div>
+          <div class="stat-grid__label">Netflix Rows Analyzed</div>
+        </div>
+        <div class="stat-grid__item">
+          <div class="stat-grid__number" data-target="4">0</div>
+          <div class="stat-grid__label">Certifications</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section" id="skills">
+    <div class="section__label reveal">02 / Skills & Stack</div>
+    <h2 class="section__title reveal reveal--d1">Tools I <em>reach for</em>.</h2>
+  </section>
+
+  <!-- Marquee ticker -->
+  <div class="skills-marquee">
+    <div class="marquee">
+      <span class="marquee__chip">Python <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">React.js <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">Flask <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">Node.js <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">MongoDB <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">MySQL <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">Pandas <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">REST APIs <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">Gemini API <span class="marquee__sep">✦</span></span>
+      <!-- Duplicated for seamless infinite scroll -->
+      <span class="marquee__chip">Python <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">React.js <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">Flask <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">Node.js <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">MongoDB <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">MySQL <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">Pandas <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">REST APIs <span class="marquee__sep">✦</span></span>
+      <span class="marquee__chip">Gemini API <span class="marquee__sep">✦</span></span>
+    </div>
+  </div>
+
+  <!-- Skill categories -->
+  <section class="section">
+    <div class="skills__categories">
+      <div class="skill-cat reveal">
+        <div class="skill-cat__name">Languages</div>
+        <div class="skill-cat__list">
+          <span class="skill-cat__tag">Python</span>
+          <span class="skill-cat__tag">JavaScript</span>
+          <span class="skill-cat__tag">HTML5</span>
+          <span class="skill-cat__tag">CSS3</span>
+          <span class="skill-cat__tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal reveal--d1">
+        <div class="skill-cat__name">Frameworks & Libraries</div>
+        <div class="skill-cat__list">
+          <span class="skill-cat__tag">React</span>
+          <span class="skill-cat__tag">Flask</span>
+          <span class="skill-cat__tag">REST APIs</span>
+          <span class="skill-cat__tag">Pandas</span>
+          <span class="skill-cat__tag">NumPy</span>
+          <span class="skill-cat__tag">Matplotlib</span>
+          <span class="skill-cat__tag">Seaborn</span>
+          <span class="skill-cat__tag">Plotly</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal reveal--d2">
+        <div class="skill-cat__name">Data & Databases</div>
+        <div class="skill-cat__list">
+          <span class="skill-cat__tag">MySQL</span>
+          <span class="skill-cat__tag">MongoDB</span>
+          <span class="skill-cat__tag">ETL</span>
+          <span class="skill-cat__tag">EDA</span>
+          <span class="skill-cat__tag">Tableau</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal reveal--d3">
+        <div class="skill-cat__name">CS Foundations</div>
+        <div class="skill-cat__list">
+          <span class="skill-cat__tag">DSA</span>
+          <span class="skill-cat__tag">OOP</span>
+          <span class="skill-cat__tag">System Design</span>
+          <span class="skill-cat__tag">Git</span>
+          <span class="skill-cat__tag">Linux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section" id="work">
+    <div class="section__label reveal">03 / Selected Work</div>
+    <h2 class="section__title reveal reveal--d1">Three projects, <em>zero</em> filler.</h2>
+
+    <div class="carousel reveal reveal--d2">
+      <div class="carousel__track">
+        <div class="carousel__slides" id="slides">
+
+          <!-- SLIDE 1: Thumblify -->
+          <div class="slide">
+            <div class="slide__visual">
+              <div class="browser">
+                <div class="browser__bar">
+                  <span class="browser__dot"></span>
+                  <span class="browser__dot"></span>
+                  <span class="browser__dot"></span>
+                  <div class="browser__url">thumblify-client-two.vercel.app</div>
+                </div>
+                <div class="browser__content">
+                  <div class="viz-thumblify">
+                    <div class="viz-thumblify__thumb">HOOK</div>
+                    <div class="viz-thumblify__thumb">CTR+</div>
+                    <div class="viz-thumblify__thumb">AI GEN</div>
+                    <div class="viz-thumblify__thumb">16:9</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide__content">
+              <div class="project__number">// 01 · MERN + Gemini API <span class="project__year">2026</span></div>
+              <h3 class="project__title">Thumblify</h3>
+              <div class="project__tagline">AI YouTube thumbnail generator</div>
+              <p class="project__desc">Full-stack MERN app that generates and optimizes high-CTR YouTube thumbnails using Google Gemini API, with a real-time preview studio and secure media hosting.</p>
+              <ul class="project__highlights">
+                <li>Interactive React studio with 16:9, 1:1, 9:16 aspect ratio configs and live YouTube-feed simulation</li>
+                <li>Serverless backend with JWT authentication and Cloudinary media caching</li>
+                <li>Deployed on Vercel with CI-friendly build pipeline</li>
+              </ul>
+              <div class="project__tech">
+                <span class="project__tech-tag">React</span>
+                <span class="project__tech-tag">Node.js</span>
+                <span class="project__tech-tag">Express</span>
+                <span class="project__tech-tag">MongoDB</span>
+                <span class="project__tech-tag">Gemini API</span>
+                <span class="project__tech-tag">Cloudinary</span>
+                <span class="project__tech-tag">JWT</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--primary" href="https://thumblify-client-two.vercel.app" target="_blank" rel="noopener noreferrer">
+                  live demo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+                <a class="btn" href="https://github.com/amancodeit28" target="_blank" rel="noopener noreferrer">
+                  github
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 2: Netflix EDA -->
+          <div class="slide">
+            <div class="slide__visual">
+              <div class="browser">
+                <div class="browser__bar">
+                  <span class="browser__dot"></span>
+                  <span class="browser__dot"></span>
+                  <span class="browser__dot"></span>
+                  <div class="browser__url">jupyter · netflix_eda.ipynb</div>
+                </div>
+                <div class="browser__content">
+                  <div class="viz-netflix">
+                    <div class="viz-netflix__bar"></div>
+                    <div class="viz-netflix__bar"></div>
+                    <div class="viz-netflix__bar"></div>
+                    <div class="viz-netflix__bar"></div>
+                    <div class="viz-netflix__bar"></div>
+                    <div class="viz-netflix__bar"></div>
+                    <div class="viz-netflix__bar"></div>
+                    <div class="viz-netflix__bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide__content">
+              <div class="project__number">// 02 · Python EDA <span class="project__year">2024</span></div>
+              <h3 class="project__title">Netflix Data Viz</h3>
+              <div class="project__tagline">Content strategy through 8,800+ titles</div>
+              <p class="project__desc">Deep EDA on Netflix's global catalog. Identified content distribution patterns across 25+ genres and 90+ countries through structured Python pipelines.</p>
+              <ul class="project__highlights">
+                <li>Multi-layer Matplotlib visualizations surfacing genre trends and release seasonality</li>
+                <li>Automated Python pipelines for cleaning, transformation, and aggregation</li>
+                <li>Insights on rating distributions driving content strategy conclusions</li>
+              </ul>
+              <div class="project__tech">
+                <span class="project__tech-tag">Python</span>
+                <span class="project__tech-tag">Pandas</span>
+                <span class="project__tech-tag">NumPy</span>
+                <span class="project__tech-tag">Matplotlib</span>
+                <span class="project__tech-tag">Jupyter</span>
+              </div>
+              <div class="project__links">
+                <a class="btn" href="https://github.com/amancodeit28" target="_blank" rel="noopener noreferrer">
+                  view on github
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 3: Marketing Funnel -->
+          <div class="slide">
+            <div class="slide__visual">
+              <div class="browser">
+                <div class="browser__bar">
+                  <span class="browser__dot"></span>
+                  <span class="browser__dot"></span>
+                  <span class="browser__dot"></span>
+                  <div class="browser__url">plotly · marketing_funnel.py</div>
+                </div>
+                <div class="browser__content">
+                  <div class="viz-funnel">
+                    <div class="viz-funnel__stage"><span>AWARENESS</span><span>100%</span></div>
+                    <div class="viz-funnel__stage"><span>INTEREST</span><span>75%</span></div>
+                    <div class="viz-funnel__stage"><span>DESIRE</span><span>45%</span></div>
+                    <div class="viz-funnel__stage"><span>CONVERT</span><span>19.4%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide__content">
+              <div class="project__number">// 03 · Analytics + Plotly <span class="project__year">2025</span></div>
+              <h3 class="project__title">Marketing Funnel Analysis</h3>
+              <div class="project__tagline">19.4% conversion, 48.9% checkout drop-off</div>
+              <p class="project__desc">Modeled a 4-stage marketing funnel across simulated e-commerce data, revealing key drop-off points and actionable business signals.</p>
+              <ul class="project__highlights">
+                <li>End-to-end data cleaning, transformation, and stage aggregation with Pandas</li>
+                <li>Interactive drop-off visualizations built in Plotly and Seaborn</li>
+                <li>Surface-level insights turned into concrete retention hypotheses</li>
+              </ul>
+              <div class="project__tech">
+                <span class="project__tech-tag">Python</span>
+                <span class="project__tech-tag">Pandas</span>
+                <span class="project__tech-tag">NumPy</span>
+                <span class="project__tech-tag">Matplotlib</span>
+                <span class="project__tech-tag">Seaborn</span>
+                <span class="project__tech-tag">Plotly</span>
+              </div>
+              <div class="project__links">
+                <a class="btn" href="https://github.com/amancodeit28" target="_blank" rel="noopener noreferrer">
+                  view on github
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <div class="carousel__controls">
+        <div class="carousel__dots" id="dots">
+          <button class="carousel__dot active" data-idx="0" aria-label="Go to slide 1"></button>
+          <button class="carousel__dot" data-idx="1" aria-label="Go to slide 2"></button>
+          <button class="carousel__dot" data-idx="2" aria-label="Go to slide 3"></button>
+        </div>
+        <div class="carousel__arrows">
+          <button class="carousel__arrow" id="prev" aria-label="Previous project">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="carousel__arrow" id="next" aria-label="Next project">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="section" id="stats">
+    <div class="section__label reveal">04 / Numbers</div>
+    <h2 class="section__title reveal reveal--d1">Consistency, <em>quantified</em>.</h2>
+
+    <div class="stats__grid">
+      <!-- LeetCode card -->
+      <div class="stat-card reveal reveal--d1">
+        <div class="stat-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div class="stat-card__heading">LeetCode · @lookatthis28</div>
+        <div class="stat-card__big"><span class="counter" data-target="250">0</span><span class="accent">+</span></div>
+        <div class="stat-card__sub">Problems solved across DSA topics — arrays, DP, graphs, trees, and system-design patterns.</div>
+
+        <div class="lc-breakdown">
+          <div class="lc-item lc-item--easy">
+            <span class="lc-item__name">Easy</span>
+            <div class="lc-item__bar"><span class="lc-item__fill" data-w="90"></span></div>
+            <span class="lc-item__count">62</span>
+          </div>
+          <div class="lc-item lc-item--med">
+            <span class="lc-item__name">Medium</span>
+            <div class="lc-item__bar"><span class="lc-item__fill" data-w="75"></span></div>
+            <span class="lc-item__count">74</span>
+          </div>
+          <div class="lc-item lc-item--hard">
+            <span class="lc-item__name">Hard</span>
+            <div class="lc-item__bar"><span class="lc-item__fill" data-w="18"></span></div>
+            <span class="lc-item__count">14</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub card -->
+      <div class="stat-card reveal reveal--d2">
+        <div class="stat-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </div>
+        <div class="stat-card__heading">GitHub · @amancodeit28</div>
+        <div class="stat-card__big"><span class="counter" data-target="380">0</span></div>
+        <div class="stat-card__sub">Contributions over the last 6 months — consistent commits across full-stack + analytics work.</div>
+        <div class="contrib-grid" id="contribGrid"></div>
+      </div>
+
+      <!-- Academic card -->
+      <div class="stat-card reveal reveal--d3">
+        <div class="stat-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="stat-card__heading">Academic performance</div>
+
+        <div style="display:flex; gap:24px; align-items:center; margin-top:12px">
+          <div class="ring">
+            <svg width="120" height="120" viewBox="0 0 120 120">
+              <circle class="ring__track" cx="60" cy="60" r="52" />
+              <circle class="ring__fill" cx="60" cy="60" r="52"
+                stroke-dasharray="326.7"
+                stroke-dashoffset="52.8"
+                id="cgpaRing" />
+            </svg>
+            <div class="ring__number">8.4</div>
+          </div>
+          <div>
+            <div style="font-family:var(--mono); font-size:11px; color:var(--muted); letter-spacing:.1em; text-transform:uppercase; margin-bottom:8px">Current MCA</div>
+            <div style="font-size:14px; color:var(--muted); line-height:1.5">Top decile in DSA & Systems coursework. Pursuing depth in distributed systems + ML.</div>
+          </div>
+        </div>
+
+        <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--line); font-family:var(--mono); font-size:11px; color:var(--muted); letter-spacing:.1em; text-transform:uppercase">
+          Prev: BCA · 8.01 CGPA <span style="color:var(--lime)">↑</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TIMELINE / CERTIFICATIONS ===================== -->
+  <section class="section" id="experience">
+    <div class="section__label reveal">05 / Milestones</div>
+    <h2 class="section__title reveal reveal--d1">Certifications & <em>signals</em>.</h2>
+
+    <div class="timeline">
+      <div class="timeline__item reveal">
+        <div class="timeline__date">March 2026 · Current</div>
+        <div class="timeline__title">Data Analytics Job Simulation</div>
+        <div class="timeline__org">Deloitte Australia · Forage</div>
+        <div class="timeline__desc">Completed forensic-technology + data-analysis simulation. Built a Tableau dashboard presenting analytical findings and used Excel for data classification and drawing business conclusions.</div>
+      </div>
+
+      <div class="timeline__item reveal reveal--d1">
+        <div class="timeline__date">March 2026</div>
+        <div class="timeline__title">SQL (Intermediate)</div>
+        <div class="timeline__org">HackerRank</div>
+        <div class="timeline__desc">Proficiency across joins, subqueries, aggregations, filtering, and window functions through HackerRank's Intermediate-level assessment.</div>
+      </div>
+
+      <div class="timeline__item reveal reveal--d2">
+        <div class="timeline__date">2025</div>
+        <div class="timeline__title">OCI 2025 AI Foundations Associate</div>
+        <div class="timeline__org">Oracle Cloud Infrastructure</div>
+        <div class="timeline__desc">Foundational knowledge of AI, Machine Learning, computer vision, and generative AI as delivered on Oracle Cloud Infrastructure.</div>
+      </div>
+
+      <div class="timeline__item reveal reveal--d3">
+        <div class="timeline__date">2024</div>
+        <div class="timeline__title">Case Studies on Seaborn</div>
+        <div class="timeline__org">Infosys Springboard</div>
+        <div class="timeline__desc">Performed EDA using Seaborn for statistical data visualization; analyzed patterns, trends, and relationships across datasets.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section" id="education">
+    <div class="section__label reveal">06 / Education</div>
+    <h2 class="section__title reveal reveal--d1">Where I'm <em>learning</em>.</h2>
+
+    <div class="edu__grid">
+      <div class="edu-card reveal reveal--d1">
+        <div class="edu-card__degree">Master of Computer Applications</div>
+        <div class="edu-card__school">Noida Institute of Engineering and Technology</div>
+        <div class="edu-card__location">NIET · Greater Noida, UP · 2025 – 2027</div>
+        <div class="edu-card__stats">
+          <div><span class="edu-card__stats-key">CGPA</span><span class="edu-card__stats-val">8.4</span></div>
+          <div><span class="edu-card__stats-key">Focus</span><span class="edu-card__stats-val edu-card__stats-val--sm">Distributed Systems + ML</span></div>
+          <div><span class="edu-card__stats-key">Status</span><span class="edu-card__stats-val edu-card__stats-val--sm">In progress</span></div>
+        </div>
+      </div>
+
+      <div class="edu-card reveal reveal--d2">
+        <div class="edu-card__degree">Bachelor of Computer Applications</div>
+        <div class="edu-card__school">Galgotias University</div>
+        <div class="edu-card__location">Greater Noida, UP · 2022 – 2025</div>
+        <div class="edu-card__stats">
+          <div><span class="edu-card__stats-key">CGPA</span><span class="edu-card__stats-val">8.01</span></div>
+          <div><span class="edu-card__stats-key">Focus</span><span class="edu-card__stats-val edu-card__stats-val--sm">DSA + Web Dev</span></div>
+          <div><span class="edu-card__stats-key">Status</span><span class="edu-card__stats-val edu-card__stats-val--sm">Graduated</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact section" id="contact">
+    <div class="contact__inner">
+      <div>
+        <div class="section__label reveal">07 / Contact</div>
+        <h2 class="section__title reveal reveal--d1">Let's <em>build</em> something.</h2>
+        <p class="contact__lead reveal reveal--d2">Actively looking for Software Developer and Data Analyst / Analytics-Engineering roles for 2026-27. If you're hiring for SDE or analyst positions — my inbox is open.</p>
+
+        <div class="contact__links reveal reveal--d3">
+          <a href="mailto:sharmaaman8657@gmail.com" class="contact__link">
+            <div><span class="dim">01 —</span> Email</div>
+            <span>sharmaaman8657@gmail.com <span class="contact__link-icon">↗</span></span>
+          </a>
+          <a href="tel:+917683050771" class="contact__link">
+            <div><span class="dim">02 —</span> Phone</div>
+            <span>+91 76830 50771 <span class="contact__link-icon">↗</span></span>
+          </a>
+          <a href="https://linkedin.com/in/aman-sharma2821" target="_blank" rel="noopener noreferrer" class="contact__link">
+            <div><span class="dim">03 —</span> LinkedIn</div>
+            <span>/in/aman-sharma2821 <span class="contact__link-icon">↗</span></span>
+          </a>
+          <a href="https://github.com/amancodeit28" target="_blank" rel="noopener noreferrer" class="contact__link">
+            <div><span class="dim">04 —</span> GitHub</div>
+            <span>@amancodeit28 <span class="contact__link-icon">↗</span></span>
+          </a>
+          <a href="https://leetcode.com/u/lookatthis28/" target="_blank" rel="noopener noreferrer" class="contact__link">
+            <div><span class="dim">05 —</span> LeetCode</div>
+            <span>@lookatthis28 <span class="contact__link-icon">↗</span></span>
+          </a>
+        </div>
+      </div>
+
+      <form class="form reveal reveal--d3">
+        <div class="form__group">
+          <label class="form__label" for="form-name">Your name</label>
+          <input class="form__input" id="form-name" type="text" placeholder="Alex from Google Recruiting" required />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="form-email">Email</label>
+          <input class="form__input" id="form-email" type="email" placeholder="alex@company.com" required />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="form-role">Company / role</label>
+          <input class="form__input" id="form-role" type="text" placeholder="e.g. SWE Intern, New Grad SDE" />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="form-message">Message</label>
+          <textarea class="form__textarea" id="form-message" placeholder="Tell me about the opportunity…" required></textarea>
+        </div>
+        <button type="submit" class="form__submit">
+          send message
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>© 2026 · AMAN SHARMA · CRAFTED IN DELHI</div>
+      <div class="footer__socials">
+        <a href="https://linkedin.com/in/aman-sharma2821" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/amancodeit28" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://leetcode.com/u/lookatthis28/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+        <a href="mailto:sharmaaman8657@gmail.com">Email</a>
+      </div>
+      <div>v1.0 · <span style="color:var(--lime)">●</span> ONLINE</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
